@@ -1,0 +1,77 @@
+// React Component
+import styles from './Header.module.css'; //CSS Module
+
+function Header() {
+  return (
+    <header className={styles.header}>
+      <div className={styles.logoContainer}>
+        {/* Logo Image */}
+        <img src="djoumla-logo.png" alt="Djoumla.dz Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><Link to="/" activeClassName="active">Home</Link></li>
+          <li><Link to="/collections">Collections</Link></li>
+          {/* Add other navigation links */}
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
+.card {
+  perspective: 800px; /* Adjust for desired depth */
+  display: flex;
+  flex-direction: column;
+  width: 300px;  /* adjust based on need*/
+  border: 1px solid #ccc;
+  margin: 15px;
+  transition: all 0.6s ease;
+}
+
+.card-front {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 200px; /* Adjust */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;  /* light grey for front*/
+}
+
+.card-back {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 200px; /* Adjust */
+  background-color: #e9ecef;  /* lighter grey for back*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+   transform: rotateY(25deg); /*Tilt */
+   transition: transform 0.6s ease;
+}
+ import React from 'react';
+ import styles from './ProductCard.module.css'; //CSS Module
+ const ProductCard = ({ product }) => {
+   return(
+       <div className={styles.card}>
+           <div className={styles.card-front}>
+              {/* Image and name will be added here */}
+               </div>
+           <div className={styles.card-back}>
+             <h1>{product.name}</h1>
+             <p>Price: {product.price}</p>
+           </div>
+       </div>
+   );
+ };
+
+export default ProductCard;
+
+
