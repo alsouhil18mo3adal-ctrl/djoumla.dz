@@ -539,7 +539,6 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
-            text-align: left;
         }
 
         .footer-section h4 {
@@ -596,13 +595,11 @@
                 font-size: 1.8rem;
             }
 
-            /* Disable 3D effects on mobile for performance */
             .product-card {
                 perspective: none;
             }
         }
 
-        /* ===== CONTAINER ===== */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -611,14 +608,12 @@
     </style>
 </head>
 <body>
-    <!-- Animated Background -->
     <div class="background-animation">
         <div class="floating-shape shape1"></div>
         <div class="floating-shape shape2"></div>
         <div class="floating-shape shape3"></div>
     </div>
 
-    <!-- Header -->
     <header>
         <div class="logo">Djoumla.dz</div>
         <nav>
@@ -633,7 +628,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1 data-ar="ملابس تركية متميزة" data-fr="Vêtements Turcs Premium">ملابس تركية متميزة</h1>
         <p class="hero-subtitle" data-ar="مستوردة مباشرة للبيع بالجملة في السوق الجزائري" data-fr="Importé directement pour le commerce de gros algérien">مستوردة مباشرة للبيع بالجملة في السوق الجزائري</p>
@@ -642,49 +636,46 @@
         <button class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;" data-ar="استكشف المجموعات" data-fr="Explorer les Collections">استكشف المجموعات</button>
     </section>
 
-    <!-- Products Section -->
     <section id="products">
         <div class="section-title">
             <h2 data-ar="المجموعات المميزة" data-fr="Collections en Vedette">المجموعات المميزة</h2>
         </div>
 
         <div class="products-container">
-            <!-- Product Cards with 3D Flip Effect -->
-            <div class="product-card" onclick="openFullscreen('700224522_970970679193980_3151922210553462015_n.jpg')">
+            <div class="product-card" onclick="openFullscreen('730713531_1006613415629706_4517441541575988116_n.jpg')">
                 <div class="card-face card-front">
                     <div class="card-image">
-                        <img src="700224522_970970679193980_3151922210553462015_n.jpg" alt="Alger Collection">
+                        <img src="730713531_1006613415629706_4517441541575988116_n.jpg" alt="Alger Collection">
                     </div>
                 </div>
             </div>
 
-            <div class="product-card" onclick="openFullscreen('702275562_972509565706758_1172575426962222054_n.jpg')">
+            <div class="product-card" onclick="openFullscreen('730640171_1006613468963034_9065542140784873477_n.jpg')">
                 <div class="card-face card-front">
                     <div class="card-image">
-                        <img src="702275562_972509565706758_1172575426962222054_n.jpg" alt="Designer Collection">
+                        <img src="730640171_1006613468963034_9065542140784873477_n.jpg" alt="Designer Collection">
                     </div>
                 </div>
             </div>
 
-            <div class="product-card" onclick="openFullscreen('719773399_993785366912511_1943245622664624722_n.jpg')">
+            <div class="product-card" onclick="openFullscreen('718092893_993785486912499_3729722865444895831_n.jpg')">
                 <div class="card-face card-front">
                     <div class="card-image">
-                        <img src="719773399_993785366912511_1943245622664624722_n.jpg" alt="Hermès Collection">
+                        <img src="718092893_993785486912499_3729722865444895831_n.jpg" alt="Hermès Collection">
                     </div>
                 </div>
             </div>
 
-            <div class="product-card" onclick="openFullscreen('720573588_993788283578886_8405920821685020777_n.jpg')">
+            <div class="product-card" onclick="openFullscreen('719172788_993785566912491_8193101301891602353_n.jpg')">
                 <div class="card-face card-front">
                     <div class="card-image">
-                        <img src="720573588_993788283578886_8405920821685020777_n.jpg" alt="Lacoste Collection">
+                        <img src="719172788_993785566912491_8193101301891602353_n.jpg" alt="Lacoste Collection">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="section-title">
             <h2 data-ar="لماذا تختار Djoumla.dz؟" data-fr="Pourquoi Choisir Djoumla.dz?">لماذا تختار Djoumla.dz؟</h2>
@@ -738,7 +729,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="section-title">
             <h2 data-ar="استفسار البيع بالجملة" data-fr="Demande de Gros">استفسار البيع بالجملة</h2>
@@ -758,7 +748,7 @@
 
                 <div class="form-group">
                     <label for="phone" data-ar="رقم الهاتف" data-fr="Numéro de Téléphone">رقم الهاتف</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="+213 XXX XXX XXX" data-ar-placeholder="+213 XXX XXX XXX" data-fr-placeholder="+33 XXX XXX XXX">
+                    <input type="tel" id="phone" name="phone" required placeholder="+213 793 41 51 05" data-ar-placeholder="+213 793 41 51 05" data-fr-placeholder="+33 XXX XXX XXX">
                 </div>
 
                 <div class="form-group">
@@ -776,7 +766,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -796,9 +785,9 @@
 
             <div class="footer-section">
                 <h4 data-ar="معلومات الاتصال" data-fr="Informations de Contact">معلومات الاتصال</h4>
-                <p>📍 <span data-ar="البليدة، الجزائر" data-fr="Blida, Algérie">البليدة، الجزائر</span></p>
+                <p>📍 <span data-ar="أولاد شبل، بئر توتة، الجزائر" data-fr="Ouled Chebel, Birtouta, Algérie">أولاد شبل، بئر توتة، الجزائر</span></p>
                 <p>📧 info@djoumla.dz</p>
-                <p>📞 +213 XXX XXX XXX</p>
+                <p>📞 +213 793 41 51 05</p>
                 <p>💬 <span data-ar="WhatsApp: متاح" data-fr="WhatsApp: Disponible">WhatsApp: متاح</span></p>
             </div>
         </div>
@@ -808,7 +797,6 @@
         </div>
     </footer>
 
-    <!-- Fullscreen Modal -->
     <div id="fullscreenModal" class="fullscreen-modal">
         <div class="fullscreen-modal-content">
             <button class="fullscreen-modal-close" onclick="closeFullscreen()">&times;</button>
@@ -817,7 +805,6 @@
     </div>
 
     <script>
-        // ===== LANGUAGE SWITCHING =====
         let currentLanguage = 'ar';
 
         function setLanguage(lang) {
@@ -825,43 +812,35 @@
             const htmlElement = document.documentElement;
             const isArabic = lang === 'ar';
             
-            // Set HTML attributes
             htmlElement.lang = lang;
             htmlElement.dir = isArabic ? 'rtl' : 'ltr';
             
-            // Update all translatable elements
             document.querySelectorAll('[data-ar]').forEach(element => {
                 const text = lang === 'ar' ? element.getAttribute('data-ar') : element.getAttribute('data-fr');
                 if (text) element.textContent = text;
             });
             
-            // Update input placeholders
             document.querySelectorAll('[data-ar-placeholder]').forEach(element => {
                 const placeholder = lang === 'ar' ? element.getAttribute('data-ar-placeholder') : element.getAttribute('data-fr-placeholder');
                 if (placeholder) element.placeholder = placeholder;
             });
             
-            // Update active language button
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
             });
             
-            // Save preference
             localStorage.setItem('language', lang);
         }
 
-        // Language toggle listeners
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 setLanguage(btn.getAttribute('data-lang'));
             });
         });
 
-        // Initialize with saved language or default Arabic
         const savedLanguage = localStorage.getItem('language') || 'ar';
         setLanguage(savedLanguage);
 
-        // ===== FULLSCREEN MODAL FUNCTIONS =====
         function openFullscreen(imageSrc) {
             const modal = document.getElementById('fullscreenModal');
             const image = document.getElementById('fullscreenImage');
@@ -876,21 +855,18 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside the image
         document.getElementById('fullscreenModal').addEventListener('click', (e) => {
             if (e.target.id === 'fullscreenModal') {
                 closeFullscreen();
             }
         });
 
-        // Close modal on Escape key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeFullscreen();
             }
         });
 
-        // 3D Tilt Effect on Mouse Move
         const productCards = document.querySelectorAll('.product-card');
 
         productCards.forEach(card => {
@@ -913,14 +889,12 @@
             });
         });
 
-        // Form Submission Handler
         function handleSubmit(event) {
             event.preventDefault();
             alert('Thank you for your inquiry! We will contact you soon at ' + document.getElementById('email').value);
             event.target.reset();
         }
 
-        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -933,7 +907,6 @@
             });
         });
 
-        // Add scroll animation for elements
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -948,7 +921,6 @@
             });
         }, observerOptions);
 
-        // Animate product cards on scroll
         productCards.forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(20px)';
